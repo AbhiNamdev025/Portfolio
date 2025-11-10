@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styles from "./header.module.css";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => setOpen(!open);
-
   const closeMenu = () => setOpen(false);
 
   return (
@@ -17,7 +16,10 @@ const Header = () => {
           <span className={styles.accentPurple}>P</span>ortfolio
         </Link>
 
-        <button className={styles.hamburger} onClick={toggleMenu}>
+        <button
+          className={`${styles.hamburger} ${open ? styles.activeHam : ""}`}
+          onClick={toggleMenu}
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -28,24 +30,53 @@ const Header = () => {
           onClick={closeMenu}
         >
           <li>
-            <Link to="/" className={styles.navLink}>
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.navLink} ${styles.active}`
+                  : styles.navLink
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" className={styles.navLink}>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.navLink} ${styles.active}`
+                  : styles.navLink
+              }
+            >
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/projects" className={styles.navLink}>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.navLink} ${styles.active}`
+                  : styles.navLink
+              }
+            >
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" className={styles.navLink}>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.navLink} ${styles.active}`
+                  : styles.navLink
+              }
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
 

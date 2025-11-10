@@ -1,0 +1,26 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+}
+
+.active {
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+  border-color: transparent;
+}

@@ -1,30 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 .aboutSection {
-  padding: 100px 20px 60px;
+  padding: 100px 20px 80px;
   background: linear-gradient(180deg, #0a1929, #1e3a5f);
   color: white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutSection::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -60px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(58, 134, 255, 0.25),
+    transparent 60%
+  );
+  filter: blur(80px);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
-.aboutGrid {
-  display: grid;
-  gap: 40px;
-  align-items: center;
-}
-
-@media (min-width: 980px) {
-  .aboutGrid {
-    grid-template-columns: 1.2fr 0.8fr;
-  }
-}
-
-.aboutText h2 {
+.aboutContent h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .highlight {
@@ -34,22 +46,57 @@
   color: #8338ec;
 }
 
-.aboutText p {
+/* Quote area */
+.quoteBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.quoteIcon {
+  color: #3a86ff;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 18px;
+  font-style: italic;
+  color: #cfe3ff;
+  font-weight: 500;
+  max-width: 650px;
+}
+
+.description {
   color: #dbe8f6;
-  margin-bottom: 14px;
-  line-height: 1.6;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  font-size: 15.5px;
 }
 
-.objectiveBox {
-  margin-top: 16px;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 18px;
-  border-radius: 10px;
-  border-left: 4px solid #3a86ff;
+.divider {
+  width: 80px;
+  height: 3px;
+  margin: 30px auto 20px;
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+  border-radius: 3px;
 }
 
-.aboutImage img {
-  width: 90%;
-  border-radius: 50%;
-  border: 4px solid #3a86ff;
+.motto {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .aboutContent h2 {
+    font-size: 26px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
 }

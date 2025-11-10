@@ -1,0 +1,40 @@
+.projectsSection {
+  background: linear-gradient(180deg, #0a1929, #1e3a5f);
+  color: white;
+  padding: 100px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #3a86ff;
+}
+
+.subtext {
+  text-align: center;
+  color: #dbe8f6;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

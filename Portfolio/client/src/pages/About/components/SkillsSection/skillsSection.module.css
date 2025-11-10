@@ -3,6 +3,7 @@
   background: #0f1f3a;
   color: white;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -18,6 +19,7 @@
   color: #dbe8f6;
   margin-bottom: 30px;
   margin-top: 10px;
+  font-size: 15px;
 }
 
 .skillsGrid {
@@ -44,7 +46,7 @@
 }
 
 .icon {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 10px;
   transition: transform 0.3s, color 0.3s;
 }
@@ -53,12 +55,11 @@
   transform: scale(1.1);
 }
 
-/* 🎨 Icon Colors */
 .react {
   color: #61dbfb;
 }
 .node {
-  color: #68a063;
+  color: #3c873a;
 }
 .express {
   color: #ffffff;
@@ -79,8 +80,16 @@
   color: #a259ff;
 }
 .git {
-  color: #f34f29;
+  color: #f1502f;
 }
 .api {
   color: #ffb703;
+}
+
+.clipchamp {
+  color: #9333ea;
+}
+
+.capcut {
+  color: #00c3ff;
 }

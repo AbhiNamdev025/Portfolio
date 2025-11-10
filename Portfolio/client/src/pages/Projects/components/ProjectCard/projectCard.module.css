@@ -1,0 +1,166 @@
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 220px;
+  perspective: 1200px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  margin: 20px auto;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: rotateY(0deg);
+  overflow: hidden;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.frontTitle {
+  flex: 1;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+.back {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 25, 41, 0.95),
+    rgba(15, 35, 65, 0.9)
+  );
+  box-shadow: 0 8px 30px rgba(58, 134, 255, 0.2);
+  color: white;
+  transform: rotateY(-180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.desc {
+  color: #dbe8f6;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  max-width: 420px;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.stack span {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+.stack span:hover {
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons a {
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 95%;
+    height: 300px;
+  }
+
+  .image {
+    width: 100%;
+    height: 55%;
+  }
+
+  .frontTitle {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 8px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .buttons a {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}

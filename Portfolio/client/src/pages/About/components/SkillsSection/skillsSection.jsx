@@ -5,6 +5,7 @@ import {
   FaNodeJs,
   FaTools,
   FaLaptopCode,
+  FaVideo,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -26,6 +27,7 @@ const skills = [
   { icon: <SiFigma className={styles.figma} />, name: "Figma (Basic UI/UX)" },
   { icon: <FaTools className={styles.git} />, name: "Git & GitHub" },
   { icon: <FaLaptopCode className={styles.api} />, name: "RESTful APIs" },
+  { icon: <FaVideo className={styles.clipchamp} />, name: "MS Clipchamp" },
 ];
 
 const SkillsSection = () => {
@@ -36,8 +38,8 @@ const SkillsSection = () => {
           Technical <span className={styles.highlight}>Skills</span>
         </h2>
         <p className={styles.sectionDesc}>
-          Technologies and tools I use to design, develop, and deploy web
-          applications.
+          Technologies and creative tools I use to design, develop, edit, and
+          deploy modern digital experiences.
         </p>
 
         <div className={styles.skillsGrid}>
