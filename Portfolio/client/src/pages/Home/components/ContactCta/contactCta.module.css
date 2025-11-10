@@ -1,0 +1,69 @@
+.contactCta {
+  padding: 100px 20px;
+  background: #0a1929;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.highlight {
+  color: #8338ec;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+p {
+  color: #dbe8f6;
+  font-size: 15px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.btnLinkedin {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #0077b5;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btnLinkedin:hover {
+  background: #005c8e;
+  transform: translateY(-3px);
+}

@@ -1,0 +1,140 @@
+.projects {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #1e3a5f, #0a1929);
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.highlight {
+  color: #3a86ff;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  gap: 28px;
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  perspective: 1000px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cardFront {
+  background: linear-gradient(145deg, #101f3e, #0b1730);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: rotateY(0deg);
+}
+
+.card:hover .cardFront {
+  transform: rotateY(180deg);
+}
+
+.cardBack {
+  background: linear-gradient(145deg, #15284d, #0c1b34);
+  padding: 22px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(-180deg);
+  box-shadow: 0 8px 16px rgba(58, 134, 255, 0.3);
+}
+
+.card:hover .cardBack {
+  transform: rotateY(0deg);
+}
+
+.icon {
+  font-size: 48px;
+  color: #3a86ff;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+  transform: scale(1.2);
+}
+
+.card h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.cardBack p {
+  color: #dbe8f6;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 16px;
+  animation: fadeIn 0.5s ease;
+  margin-top: 15px;
+}
+
+.liveBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(90deg, #3a86ff, #8338ec);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.liveBtn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

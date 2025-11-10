@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.aboutSection {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #0a1929, #1e3a5f);
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionHeader h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.sectionHeader p {
+  font-size: 16px;
+  color: #dbe8f6;
+  margin-top: 10px;
+}
+
+.highlight {
+  color: #3a86ff;
+}
+.accentPurple {
+  color: #8338ec;
+}
+
+/* Grid Layout */
+.aboutGrid {
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 980px) {
+  .aboutGrid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Left - Info */
+.aboutContent h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #3a86ff;
+}
+
+.aboutContent p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #dbe8f6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Right - Skills */
+.skillsContainer h3 {
+  font-size: 22px;
+  color: #8338ec;
+  margin-bottom: 16px;
+}
+
+.skillsGrid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skillCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.icon {
+  font-size: 32px;
+  color: #3a86ff;
+  margin-bottom: 10px;
+}
+
+.skillCard h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.skillCard p {
+  font-size: 14px;
+  color: #dbe8f6;
+  line-height: 1.5;
+}
