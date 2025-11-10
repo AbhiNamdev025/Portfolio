@@ -2,10 +2,10 @@ export const projects = [
   // Full Stack
   {
     id: 1,
-    title: "Rydixo Taxi Booking Platform",
+    title: "Rydixo Cab Booking Platform",
     category: "Full Stack",
     description:
-      "A full-stack taxi booking web application with real-time booking, driver management, and user authentication using JWT and MongoDB.",
+      "A full-stack Cab booking web application with real-time booking, driver management, and user authentication using JWT and MongoDB.",
     image: "/assets/projects/rydixo.png",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     liveLink: "#",
@@ -45,9 +45,44 @@ export const projects = [
     github: "#",
   },
 
-  // F-End
+  // JS Games
   {
     id: 5,
+    title: "Tic Tac Toe Game",
+    category: "JS Games",
+    description:
+      "Classic two-player Tic Tac Toe game with responsive UI and JavaScript-based game logic.",
+    image: "/assets/projects/tictactoe.png",
+    stack: ["JavaScript", "CSS"],
+    liveLink: "https://tictactoe-lemon-nine.vercel.app/",
+    github: "#",
+  },
+  {
+    id: 6,
+    title: "Dino Runner Game",
+    category: "JS Games",
+    description:
+      "A browser-based Chrome Dino Game built with HTML, CSS, and JavaScript — includes jump physics and score tracking.",
+    image: "/assets/projects/dino.png",
+    stack: ["HTML", "CSS", "JavaScript"],
+    liveLink: "https://dinogame-phi.vercel.app/",
+    github: "#",
+  },
+  {
+    id: 7,
+    title: "JavaScript Calculator",
+    category: "JS Games",
+    description:
+      "A modern calculator app built with HTML, CSS, and vanilla JavaScript supporting all basic arithmetic operations.",
+    image: "/assets/projects/calculator.png",
+    stack: ["JavaScript", "HTML", "CSS"],
+    liveLink: "https://git-blush-kappa.vercel.app/",
+    github: "#",
+  },
+
+  // Frontend
+  {
+    id: 8,
     title: "Chemist Web Platform",
     category: "Frontend",
     description:
@@ -59,7 +94,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 6,
+    id: 9,
     title: "My City Tourism Website",
     category: "Frontend",
     description:
@@ -71,7 +106,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 7,
+    id: 10,
     title: "Pet Adoption Website",
     category: "Frontend",
     description:
@@ -83,7 +118,7 @@ export const projects = [
     github: "#",
   },
   {
-    id: 8,
+    id: 11,
     title: "Green Nursery Website",
     category: "Frontend",
     description:
@@ -95,50 +130,15 @@ export const projects = [
     github: "#",
   },
   {
-    id: 9,
-    title: "Nike Clone Website",
+    id: 12,
+    title: "Nike Replication Website",
     category: "Frontend",
     description:
-      "A sleek, responsive Nike store clone with mega menu navigation, animations, and a hero banner built with HTML, CSS, and JS.",
+      "A sleek, responsive Nike store Replication with mega menu navigation, animations, and a hero banner built with HTML, CSS, and JS.",
     image: "/assets/projects/nike.png",
     stack: ["HTML", "CSS"],
     liveLink:
       "https://assignment-live-cgqe13bxb-abhi-namdevs-projects.vercel.app/nikeHomePage/index.html",
-    github: "#",
-  },
-
-  //   JS
-  {
-    id: 10,
-    title: "Tic Tac Toe Game",
-    category: "JS Games",
-    description:
-      "Classic two-player Tic Tac Toe game with responsive UI and JavaScript-based game logic.",
-    image: "/assets/projects/tictactoe.png",
-    stack: ["JavaScript", "CSS"],
-    liveLink: "https://tictactoe-lemon-nine.vercel.app/",
-    github: "#",
-  },
-  {
-    id: 11,
-    title: "Dino Runner Game",
-    category: "JS Games",
-    description:
-      "A browser-based Chrome Dino Game clone built with HTML, CSS, and JavaScript — includes jump physics and score tracking.",
-    image: "/assets/projects/dino.png",
-    stack: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://dinogame-phi.vercel.app/",
-    github: "#",
-  },
-  {
-    id: 12,
-    title: "JavaScript Calculator",
-    category: "JS Games",
-    description:
-      "A modern calculator app built with HTML, CSS, and vanilla JavaScript supporting all basic arithmetic operations.",
-    image: "/assets/projects/calculator.png",
-    stack: ["JavaScript", "HTML", "CSS"],
-    liveLink: "https://git-blush-kappa.vercel.app/",
     github: "#",
   },
 ];
