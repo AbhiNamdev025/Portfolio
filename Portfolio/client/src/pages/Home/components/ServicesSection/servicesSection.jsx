@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ServicesSection.module.css";
+import styles from "./servicesSection.module.css";
 import { FaCode, FaServer, FaVideo } from "react-icons/fa";
 
 const services = [
