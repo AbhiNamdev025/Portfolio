@@ -74,7 +74,7 @@ export const sendMail = async (req, res) => {
 
   try {
     await resend.emails.send({
-      from: "Portfolio",
+      from: "Portfolio <onboarding@resend.dev>",
       to: process.env.RECEIVER_EMAIL,
       subject: `📬 New Message from ${name} — Portfolio Inquiry`,
       html: `
