@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Contact.module.css";
+import styles from "./contact.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
@@ -10,7 +10,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { FiSend } from "react-icons/fi";
-
+import { BASE_URL } from "../../../utils/constants";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -28,7 +28,7 @@ const Contact = () => {
     setIsSending(true);
 
     try {
-      const res = await fetch("https://portfolio-backend-i3sr.onrender.com/api/contact", {
+      const res = await fetch(`${BASE_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

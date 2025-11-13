@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ContactCta.module.css";
+import styles from "./contactCta.module.css";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 

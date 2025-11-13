@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ProjectsSection.module.css";
+import styles from "./projectsSection.module.css";
 import { FaTaxi, FaPaw, FaPizzaSlice, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
