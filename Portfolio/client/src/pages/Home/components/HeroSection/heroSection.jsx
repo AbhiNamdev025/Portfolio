@@ -8,7 +8,7 @@ import {
   FaInstagram,
   FaXTwitter,
 } from "react-icons/fa6";
-import image from "../../../../../../my-portfolio/main.jpg";
+import image from "../../../../../public/assets/main.jpg";
 
 const HeroSection = () => {
   return (
