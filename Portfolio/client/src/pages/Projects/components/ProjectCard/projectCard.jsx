@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./projectCard.module.css";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -23,9 +23,6 @@ const ProjectCard = ({ project }) => {
         <div className={styles.buttons}>
           <a href={project.liveLink} target="_blank">
             <FaExternalLinkAlt /> Live
-          </a>
-          <a href={project.github} target="_blank">
-            <FaGithub /> Code
           </a>
         </div>
       </div>

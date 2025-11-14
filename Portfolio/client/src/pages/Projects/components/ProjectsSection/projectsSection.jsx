@@ -5,7 +5,7 @@ import ProjectCard from "../ProjectCard/projectCard";
 import ProjectFilter from "../ProjectFilter/projectFilter";
 
 const ProjectsSection = () => {
-  const categories = ["All", "Full Stack", "Frontend", "JS Games"];
+  const categories = ["All", "Full Stack", "Frontend"];
   const [active, setActive] = useState("All");
 
   const filtered =
